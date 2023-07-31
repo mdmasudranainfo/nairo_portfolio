@@ -1,5 +1,5 @@
-import React from "react";
-import Skills from "../skills/Skills";
+import React from 'react'
+import Skills from '../skills/Skills'
 
 const resumeContent = [
   {
@@ -7,7 +7,7 @@ const resumeContent = [
     jobType: `Google | Remote`,
     jobDuration: `Feb 2021 - Present`,
     timeDuraton: `Full Time`,
-    compnayName: "Google LLC",
+    compnayName: 'Google LLC',
     jobDescription: `Adipisicing Lorem ipsum dolor sit amet, consectetur elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -19,7 +19,7 @@ const resumeContent = [
     jobType: `Ridian | Remote`,
     jobDuration: `Mar 2020 - Present`,
     timeDuraton: `Part Time`,
-    compnayName: "Ridian IT",
+    compnayName: 'Ridian IT',
     jobDescription: `Ut enim ad minim veniam, quis nostrud exercitation ullamco
     laboris nisi ut aliquip ex ea commodo consequat. Duis aute
     irure dolor. Lorem ipsum dolor sit amet, consectetur
@@ -31,32 +31,32 @@ const resumeContent = [
     jobType: `IbThemes | Remote`,
     jobDuration: `Jan 2019 - Present`,
     timeDuraton: `Full Time`,
-    compnayName: "IB Themes",
+    compnayName: 'IB Themes',
     jobDescription: ` Consectetur adipisicing elit,lorem ipsum dolor sit amet,
     sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
     ullamco laboris nisi ut aliquip ex ea commodo consequat.
     Duis aute irure dolor.`,
   },
-];
+]
 
 const educatonContent = [
   {
-    passingYear: "2018-2020",
-    degreeTitle: "Ph.D in Horriblensess",
-    instituteName: "University Of Evil Doing",
+    passingYear: '2018-2020',
+    degreeTitle: 'Ph.D in Horriblensess',
+    instituteName: 'University Of Evil Doing',
   },
   {
-    passingYear: "2013-2016",
-    degreeTitle: "Bsc. in Computer Science",
-    instituteName: "World University",
+    passingYear: '2013-2016',
+    degreeTitle: 'Bsc. in Computer Science',
+    instituteName: 'World University',
   },
   {
-    passingYear: "2010-2012",
-    degreeTitle: "Graphic Artist Training ",
-    instituteName: "Graphic Master Institute",
+    passingYear: '2010-2012',
+    degreeTitle: 'Graphic Artist Training ',
+    instituteName: 'Graphic Master Institute',
   },
-];
+]
 
 const Resume = () => {
   return (
@@ -96,7 +96,7 @@ const Resume = () => {
             className="separated"
             style={{
               backgroundImage: `url(${
-                process.env.PUBLIC_URL + "img/border-dark.png"
+                process.env.PUBLIC_URL + 'img/border-dark.png'
               })`,
             }}
           ></div>
@@ -128,7 +128,7 @@ const Resume = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Resume;
+export default Resume

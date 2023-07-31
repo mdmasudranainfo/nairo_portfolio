@@ -1,36 +1,55 @@
-import React from "react";
-import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
+import React from 'react'
+import CountUp from 'react-countup'
+import VisibilitySensor from 'react-visibility-sensor'
 
 const skillContent = [
   {
-    name: "HTML5",
-    numberPercent: "92",
-    startCount: "0",
-    endCount: "92",
+    name: 'React,',
+    numberPercent: '95',
+    startCount: '0',
+    endCount: '95',
   },
   {
-    name: "React JS",
-    numberPercent: "85",
-    startCount: "0",
-    endCount: "85",
+    name: 'Next Js,',
+    numberPercent: '85',
+    startCount: '0',
+    endCount: '85 ',
   },
   {
-    name: "Vue Js",
-    numberPercent: "90",
-    startCount: "0",
-    endCount: "90",
+    name: 'Redux',
+    numberPercent: '70',
+    startCount: '0',
+    endCount: '70',
   },
   {
-    name: "Ui/Ux",
-    numberPercent: "88",
-    startCount: "0",
-    endCount: "88",
+    name: 'Tailwind CSS',
+    numberPercent: '95',
+    startCount: '0',
+    endCount: '95',
   },
-];
+  {
+    name: 'Express JS,',
+    numberPercent: '65',
+    startCount: '0',
+    endCount: '65',
+  },
+
+  {
+    name: 'MongoDB,',
+    numberPercent: '60',
+    startCount: '0',
+    endCount: '60',
+  },
+  {
+    name: 'Firebase Authentication,,',
+    numberPercent: '90',
+    startCount: '0',
+    endCount: '90',
+  },
+]
 
 const Skills = () => {
-  const [focus, setFocus] = React.useState(false);
+  const [focus, setFocus] = React.useState(false)
   return (
     <>
       <div className="skill-wrapper">
@@ -46,9 +65,9 @@ const Skills = () => {
               >
                 {({ countUpRef }) => (
                   <VisibilitySensor
-                    onChange={(isVisible) => {
+                    onChange={isVisible => {
                       if (isVisible) {
-                        setFocus(true);
+                        setFocus(true)
                       }
                     }}
                   >
@@ -61,7 +80,7 @@ const Skills = () => {
             <div className="skill-bar">
               <div
                 className="skill-bar-in"
-                style={{ width: skill.numberPercent + "%" }}
+                style={{ width: skill.numberPercent + '%' }}
               ></div>
             </div>
           </div>
@@ -69,7 +88,7 @@ const Skills = () => {
         ))}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

@@ -1,8 +1,8 @@
-import React from "react";
-import Social from "../Social";
-import Testimonials from "../testimonial/TestimonialAnimation";
-import Services from "../service/ServiceAnimation";
-import Awards from "../award/AwardsAnimation";
+import React from 'react'
+import Social from '../Social'
+import Testimonials from '../testimonial/TestimonialAnimation'
+import Services from '../service/ServiceAnimation'
+import Awards from '../award/AwardsAnimation'
 
 const About = () => {
   return (
@@ -119,7 +119,7 @@ const About = () => {
             className="separated"
             style={{
               backgroundImage: `url(${
-                process.env.PUBLIC_URL + "img/border-dark.png"
+                process.env.PUBLIC_URL + 'img/border-dark.png'
               })`,
             }}
           ></div>
@@ -138,7 +138,7 @@ const About = () => {
             className="separated"
             style={{
               backgroundImage: `url(${
-                process.env.PUBLIC_URL + "img/border-dark.png"
+                process.env.PUBLIC_URL + 'img/border-dark.png'
               })`,
             }}
           ></div>
@@ -152,26 +152,26 @@ const About = () => {
           {/* End Awards */}
 
           {/* separated */}
-          <div
+          {/* <div
             className="separated"
             style={{
               backgroundImage: `url(${
                 process.env.PUBLIC_URL + "img/border-dark.png"
               })`,
             }}
-          ></div>
+          ></div> */}
           {/* End separated */}
 
-          <div className="title">
+          {/* <div className="title">
             <h3>Testimonials.</h3>
-          </div>
+          </div> */}
 
-          <Testimonials />
+          {/* <Testimonials /> */}
           {/* End Testimonaial */}
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About

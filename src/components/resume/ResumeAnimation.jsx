@@ -1,65 +1,25 @@
-import React from "react";
-import Skills from "../skills/Skills";
+import React from 'react'
+import Skills from '../skills/Skills'
 
 const resumeContent = [
   {
-    jobPosition: `Sr. Front-end Engineer`,
-    jobType: `Google | Remote`,
-    jobDuration: `Feb 2021 - Present`,
-    timeDuraton: `Full Time`,
-    compnayName: "Google LLC",
-    jobDescription: `Adipisicing Lorem ipsum dolor sit amet, consectetur elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor.`,
-    delayAnimation: "",
+    jobPosition: `Mern Stack Web Developer`,
+    jobType: `B Technologies | Onsite`,
+    jobDuration: `Mar 2023 - Present`,
+    timeDuraton: `Intranship`,
+    compnayName: 'B Technologies',
+    jobDescription: ` Develop plugins and blocks for WordPress. Our focus is on out-of-the-box features and functionalities rather than large-scale projects. We are here to help small businesses and blog sites that use WordPress. We also provide development services that include Drupal, Shopify, PrestaShop, and Magento as well.`,
+    delayAnimation: '',
   },
-  {
-    jobPosition: `Visual Designer`,
-    jobType: `Ridian | Remote`,
-    jobDuration: `Mar 2020 - Present`,
-    timeDuraton: `Part Time`,
-    compnayName: "Ridian IT",
-    jobDescription: `Ut enim ad minim veniam, quis nostrud exercitation ullamco
-    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor. Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua.`,
-    delayAnimation: "100",
-  },
-  {
-    jobPosition: `Animation Artist`,
-    jobType: `IbThemes | Remote`,
-    jobDuration: `Jan 2019 - Present`,
-    timeDuraton: `Full Time`,
-    compnayName: "IB Themes",
-    jobDescription: ` Consectetur adipisicing elit,lorem ipsum dolor sit amet,
-    sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor.`,
-    delayAnimation: "200",
-  },
-];
+]
 
 const educatonContent = [
   {
-    passingYear: "2018-2020",
-    degreeTitle: "Ph.D in Horriblensess",
-    instituteName: "University Of Evil Doing",
+    passingYear: '1st Year',
+    degreeTitle: 'Bachelor of Social Science(BSS)',
+    instituteName: 'Dobila Islampur College, Sirajganj',
   },
-  {
-    passingYear: "2013-2016",
-    degreeTitle: "Bsc. in Computer Science",
-    instituteName: "World University",
-  },
-  {
-    passingYear: "2010-2012",
-    degreeTitle: "Graphic Artist Training ",
-    instituteName: "Graphic Master Institute",
-  },
-];
+]
 
 const Resume = () => {
   return (
@@ -104,14 +64,14 @@ const Resume = () => {
             className="separated"
             style={{
               backgroundImage: `url(${
-                process.env.PUBLIC_URL + "img/border-dark.png"
+                process.env.PUBLIC_URL + 'img/border-dark.png'
               })`,
             }}
           ></div>
           {/* End separated */}
 
           <div className="title">
-            <h3>Education & Skills</h3>{" "}
+            <h3>Education & Skills</h3>{' '}
           </div>
 
           <div className="row align-items-center">
@@ -125,7 +85,7 @@ const Resume = () => {
                   <li key={i}>
                     <span>{val.passingYear}</span>
                     <h6>{val.degreeTitle} </h6>
-                    <p>{val.instituteName}</p>{" "}
+                    <p>{val.instituteName}</p>{' '}
                   </li>
                 ))}
               </ul>
@@ -145,7 +105,7 @@ const Resume = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Resume;
+export default Resume
