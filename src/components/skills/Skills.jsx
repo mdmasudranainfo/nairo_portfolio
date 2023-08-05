@@ -41,6 +41,12 @@ const skillContent = [
     endCount: '60',
   },
   {
+    name: 'Mongose,',
+    numberPercent: '60',
+    startCount: '0',
+    endCount: '60',
+  },
+  {
     name: 'Firebase Authentication,,',
     numberPercent: '90',
     startCount: '0',
